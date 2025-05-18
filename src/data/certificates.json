@@ -3,15 +3,19 @@
  {
     "id": "cert1",
     "title": "Certified Kubernetes Application Developer (CKAD)",
+    "issuingOrganisation": "The Linux Foundation",
     "date": "Issued Mar 2022",
     "description": "Demonstrated expertise in designing, building, configuring, and exposing cloud native applications for Kubernetes.",
-    "iconName": "Award"
+    "iconName": "Award",
+    "imageUrl": "https://placehold.co/600x350.png"
   },
   {
     "id": "cert2",
     "title": "AWS Certified Solutions Architect – Associate",
+    "issuingOrganisation": "Amazon Web Services",
     "date": "Issued Sep 2021",
     "description": "Validated ability to design and deploy well-architected solutions on AWS.",
-    "iconName": "Award"
+    "iconName": "Award",
+    "imageUrl": "https://placehold.co/600x350.png"
   }
 ]

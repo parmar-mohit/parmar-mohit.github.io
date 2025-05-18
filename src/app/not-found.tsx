@@ -19,8 +19,8 @@ export default function NotFound() {
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       // Could redirect here, e.g., window.location.href = '/';
-      // For now, just console log
-      console.log(`Key pressed: ${event.key}`);
+      // For now, just log if needed for testing, but generally, this is not for production
+      // console.log(`Key pressed: ${event.key}`);
     };
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
@@ -55,4 +55,3 @@ export default function NotFound() {
     </div>
   );
 }
-

@@ -12,15 +12,13 @@ interface ImageCarouselProps {
   altText: string;
   className?: string;
   imageClassName?: string;
-  dataAiHint?: string;
 }
 
 export function ImageCarousel({ 
   imageUrls, 
   altText, 
   className, 
-  imageClassName,
-  dataAiHint = "carousel image"
+  imageClassName
 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -52,7 +50,6 @@ export function ImageCarousel({
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className={cn("object-cover transition-opacity duration-500 ease-in-out", imageClassName)}
-        data-ai-hint={dataAiHint}
         priority={currentIndex === 0} // Prioritize loading the first image
       />
       {imageUrls.length > 1 && (

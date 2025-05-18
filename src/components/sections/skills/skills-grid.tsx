@@ -25,7 +25,6 @@ export function SkillsGrid() {
                   <Card 
                     key={skill.name} 
                     className="bg-card/70 border-border hover:border-accent shadow-md hover:shadow-accent/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
-                    data-ai-hint="skill software"
                   >
                     <CardHeader className="flex flex-row items-center justify-between pb-2">
                       <CardTitle className="text-lg font-medium text-card-foreground">{skill.name}</CardTitle>

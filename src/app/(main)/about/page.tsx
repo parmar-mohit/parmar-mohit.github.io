@@ -25,7 +25,6 @@ export default function AboutPage() {
             width={200}
             height={200}
             className="rounded-full border-4 border-accent shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-accent/40"
-            data-ai-hint="profile portrait"
           />
           <h2 className="text-2xl font-semibold text-primary">Mohit Parmar</h2>
           <p className="text-center text-muted-foreground">

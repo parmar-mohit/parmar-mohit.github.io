@@ -3,7 +3,6 @@ import type { LucideIcon } from 'lucide-react';
 
 // Import data from JSON files
 import mainNavLinksData from '@/data/mainNavLinks.json';
-// Removed: import adminNavLinksData from '@/data/adminNavLinks.json';
 import skillsDataJson from '@/data/skills.json';
 import socialLinksData from '@/data/socialLinks.json'; // Serves as contact.json
 import aboutMeData from '@/data/aboutMe.json';
@@ -24,7 +23,6 @@ export type NavLink = {
 
 // Exported constants, sourced from JSON files
 export const mainNavLinks: NavLink[] = mainNavLinksData;
-// Removed: export const adminNavLinks: NavLink[] = adminNavLinksData;
 
 export type Skill = {
   name: string;
@@ -62,10 +60,8 @@ export type Project = {
   whyIBuiltThis: string;
   githubUrl: string;
   liveDemoUrl?: string;
-  dataAiHint?: string;
   screenshots?: string[];
   challenges?: string[];
-  screenshotAiHint?: string;
 };
 export const projectsPlaceholder: Project[] = projectsData;
 
@@ -78,7 +74,6 @@ export type BlogPost = {
   date: string;
   tags: string[];
   imageUrls: string[];
-  dataAiHint?: string;
   estimatedReadingTime: string;
   content?: string;
 };
@@ -94,21 +89,46 @@ export type PageSnippet = {
 };
 export const pageSnippetsData: PageSnippet[] = pageSnippetsDataJson;
 
-// Generic type for timeline items (Experience, Education, Courses, Certificates)
+// Generic type for timeline items (Experience, Education)
 export type TimelineItem = {
   id: string;
   title: string;
   date: string;
   description: string; // Can contain newline characters for bullet points
-  iconName: string; // Icon name for the timeline item
+  iconName?: string; // Icon name for the timeline item, resolved by getIcon
 };
 
 export type ExperienceItem = TimelineItem;
 export type EducationItem = TimelineItem;
-export type CourseItem = TimelineItem;
-export type CertificateItem = TimelineItem;
+
+// Specific type for CourseItem
+export type CourseItem = {
+  id: string;
+  title: string;
+  issuingOrganisation: string;
+  date: string;
+  description: string;
+  iconName?: string;
+  imageUrl: string;
+};
+
+// Specific type for CertificateItem
+export type CertificateItem = {
+  id: string;
+  title: string;
+  issuingOrganisation: string;
+  date: string;
+  description: string;
+  iconName?: string;
+  imageUrl: string;
+};
 
 export const experienceItems: ExperienceItem[] = experienceData;
 export const educationItems: EducationItem[] = educationData;
-export const courseItems: CourseItem[] = coursesData;
-export const certificateItems: CertificateItem[] = certificatesData;
+export const courseItems: CourseItem[] = coursesData as CourseItem[];
+export const certificateItems: CertificateItem[] = certificatesData as CertificateItem[];
+
+// This constant was related to a removed component (TechSkillsGrid)
+// export const coreTechStack = [ ... ];
+// Removed SESSION_STORAGE_KEY export as BiosLoadingScreen was removed
+// export const SESSION_STORAGE_KEY = 'biosShown';

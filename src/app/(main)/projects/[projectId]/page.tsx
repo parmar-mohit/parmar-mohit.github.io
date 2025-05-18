@@ -39,7 +39,6 @@ export default async function ProjectDetailPage({ params }: { params: { projectI
           <ImageCarousel 
             imageUrls={project.imageUrls} 
             altText={`${project.title} showcase`}
-            dataAiHint={project.dataAiHint || "project showcase"}
             className="h-64 md:h-96" // Maintain aspect ratio if needed
           />
         ) : (
@@ -77,7 +76,6 @@ export default async function ProjectDetailPage({ params }: { params: { projectI
                     width={600}
                     height={400}
                     className="rounded-md shadow-md border border-border/20 object-cover aspect-video"
-                    data-ai-hint={project.screenshotAiHint || "software interface"}
                   />
                 ))}
               </CardContent>

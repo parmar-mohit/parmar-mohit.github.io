@@ -39,7 +39,6 @@ export default function BlogsPage() {
                     width={600}
                     height={300}
                     className="w-full h-48 object-cover transition-opacity duration-300 group-hover:opacity-50"
-                    data-ai-hint={post.dataAiHint || "blog banner"}
                   />
                 ) : (
                   <div className="w-full h-48 bg-muted flex items-center justify-center text-muted-foreground">

@@ -2,7 +2,7 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, FileWarning } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image"; // Still needed for potential inline images in content
+// import Image from "next/image"; // Image import removed as ImageCarousel handles images
 import { Button } from "@/components/ui/button";
 import { blogPostsPlaceholder } from "@/lib/constants";
 import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
@@ -52,7 +52,6 @@ export default async function BlogPostPage({ params }: { params: { blogId: strin
          <ImageCarousel 
             imageUrls={post.imageUrls} 
             altText={`${post.title} images`}
-            dataAiHint={post.dataAiHint || "blog image"}
             className="mb-8 max-h-[500px]" 
           />
       )}

@@ -40,7 +40,6 @@ export default function ProjectsPage() {
                   width={600}
                   height={400}
                   className="w-full h-48 object-cover project-card-image"
-                  data-ai-hint={project.dataAiHint || "project image"}
                 />
               ) : (
                 <div className="w-full h-48 bg-muted flex items-center justify-center text-muted-foreground">
