@@ -1,0 +1,53 @@
+
+[
+  {
+    "name": "Languages",
+    "iconName": "Code2",
+    "skills": [
+      { "name": "JavaScript", "iconName": "FileCode", "badge": "Expert" },
+      { "name": "TypeScript", "iconName": "FileCode", "badge": "Advanced" },
+      { "name": "Python", "iconName": "FileCode", "badge": "Intermediate" },
+      { "name": "HTML5", "iconName": "FileText", "badge": "Expert" },
+      { "name": "CSS3", "iconName": "FileText", "badge": "Expert" }
+    ]
+  },
+  {
+    "name": "Frameworks & Libraries",
+    "iconName": "LayoutGrid",
+    "skills": [
+      { "name": "React", "iconName": "Braces", "badge": "Expert" },
+      { "name": "Next.js", "iconName": "Braces", "badge": "Advanced" },
+      { "name": "Node.js", "iconName": "Server", "badge": "Advanced" },
+      { "name": "Express.js", "iconName": "Server", "badge": "Advanced" },
+      { "name": "Tailwind CSS", "iconName": "PenTool", "badge": "Advanced" }
+    ]
+  },
+  {
+    "name": "Tools & Platforms",
+    "iconName": "Wrench",
+    "skills": [
+      { "name": "Git & GitHub", "iconName": "Github", "badge": "Expert" },
+      { "name": "Docker", "iconName": "Cpu", "badge": "Intermediate" },
+      { "name": "VS Code", "iconName": "Code", "badge": "Expert" },
+      { "name": "Figma", "iconName": "PenTool", "badge": "Intermediate" }
+    ]
+  },
+  {
+    "name": "Cloud & DevOps",
+    "iconName": "Cloud",
+    "skills": [
+      { "name": "Firebase", "iconName": "DatabaseIcon", "badge": "Advanced" },
+      { "name": "Google Cloud Platform (GCP)", "iconName": "Cloud", "badge": "Intermediate" },
+      { "name": "Vercel", "iconName": "Server", "badge": "Advanced" }
+    ]
+  },
+  {
+    "name": "Databases",
+    "iconName": "DatabaseIcon",
+    "skills": [
+      { "name": "Firestore", "iconName": "DatabaseIcon", "badge": "Advanced" },
+      { "name": "MongoDB", "iconName": "DatabaseIcon", "badge": "Intermediate" },
+      { "name": "PostgreSQL", "iconName": "DatabaseIcon", "badge": "Basic" }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+
+[
+  {
+    "id": "project-alpha",
+    "title": "AI-Powered Code Reviewer",
+    "description": "A tool that leverages machine learning to automatically review code for common errors and style inconsistencies, providing actionable feedback to developers.",
+    "imageUrls": [
+      "https://placehold.co/1200x600.png",
+      "https://placehold.co/600x400.png",
+      "https://placehold.co/600x400.png"
+    ],
+    "techTags": ["Python", "ML", "Flask"],
+    "fullTechStack": ["Python", "TensorFlow", "Flask", "Docker", "Kubernetes", "PostgreSQL", "React"],
+    "whyIBuiltThis": "To explore AI applications in developer productivity and improve code quality.",
+    "githubUrl": "https://github.com/mohitparmar/project-alpha",
+    "liveDemoUrl": "https://project-alpha.mohit.dev",
+    "dataAiHint": "code editor project",
+    "screenshots": [
+        "https://placehold.co/600x400.png",
+        "https://placehold.co/600x400.png"
+    ],
+    "challenges": [
+        "Integrating TensorFlow with Flask efficiently.",
+        "Optimizing the model for real-time feedback."
+    ],
+    "screenshotAiHint": "software interface"
+  },
+  {
+    "id": "project-beta",
+    "title": "Interactive Data Visualization Dashboard",
+    "description": "A web application for visualizing complex datasets with interactive charts and graphs, helping users to uncover insights and trends.",
+    "imageUrls": [
+      "https://placehold.co/1200x600.png",
+      "https://placehold.co/600x400.png"
+    ],
+    "techTags": ["React", "D3.js", "Node.js"],
+    "fullTechStack": ["React", "D3.js", "Node.js", "Express.js", "MongoDB", "Chart.js"],
+    "whyIBuiltThis": "To make data more accessible and understandable through dynamic visualizations.",
+    "githubUrl": "https://github.com/mohitparmar/project-beta",
+    "liveDemoUrl": "https://project-beta.mohit.dev",
+    "dataAiHint": "dashboard charts"
+  },
+  {
+    "id": "project-gamma",
+    "title": "Real-time Collaborative Whiteboard",
+    "description": "A collaborative whiteboard application allowing multiple users to draw and brainstorm together in real-time, built with WebSockets.",
+    "imageUrls": [
+      "https://placehold.co/1200x600.png"
+    ],
+    "techTags": ["Next.js", "Socket.io", "Firebase"],
+    "fullTechStack": ["Next.js", "React", "Socket.io", "Firebase Realtime Database", "Tailwind CSS", "Canvas API"],
+    "whyIBuiltThis": "To create a seamless real-time collaboration tool for remote teams.",
+    "githubUrl": "https://github.com/mohitparmar/project-gamma",
+    "liveDemoUrl": "https://project-gamma.mohit.dev",
+    "dataAiHint": "whiteboard collaboration"
+  }
+]

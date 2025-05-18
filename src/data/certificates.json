@@ -1,0 +1,17 @@
+
+[
+ {
+    "id": "cert1",
+    "title": "Certified Kubernetes Application Developer (CKAD)",
+    "date": "Issued Mar 2022",
+    "description": "Demonstrated expertise in designing, building, configuring, and exposing cloud native applications for Kubernetes.",
+    "iconName": "Award"
+  },
+  {
+    "id": "cert2",
+    "title": "AWS Certified Solutions Architect – Associate",
+    "date": "Issued Sep 2021",
+    "description": "Validated ability to design and deploy well-architected solutions on AWS.",
+    "iconName": "Award"
+  }
+]

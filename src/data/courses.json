@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": "course1",
+    "title": "Advanced Node.js @ Coursera",
+    "date": "Completed Feb 2020",
+    "description": "In-depth course covering advanced Node.js concepts, performance optimization, and microservices.",
+    "iconName": "BookOpen"
+  },
+  {
+    "id": "course2",
+    "title": "Data Structures and Algorithm Specialization @ edX",
+    "date": "Completed Dec 2019",
+    "description": "Comprehensive specialization covering fundamental and advanced data structures and algorithms.",
+    "iconName": "BookOpen"
+  }
+]

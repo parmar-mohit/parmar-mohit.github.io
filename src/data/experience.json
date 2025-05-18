@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": "exp1",
+    "title": "Senior Software Engineer @ Tech Solutions Inc.",
+    "date": "Jan 2021 - Present",
+    "description": "Led development of key features for a flagship SaaS product. Mentored junior developers and contributed to architectural decisions. Specialized in full-stack development with React, Node.js, and AWS.",
+    "iconName": "Briefcase"
+  },
+  {
+    "id": "exp2",
+    "title": "Software Developer @ Innovatech Ltd.",
+    "date": "Jun 2018 - Dec 2020",
+    "description": "Developed and maintained web applications for various clients. Worked extensively with JavaScript frameworks and contributed to a significant improvement in application performance.",
+    "iconName": "Briefcase"
+  }
+]

@@ -1,0 +1,8 @@
+
+[
+  { "name": "GitHub", "url": "https://github.com/mohitparmar", "iconName": "Github" },
+  { "name": "LinkedIn", "url": "https://linkedin.com/in/mohitparmar", "iconName": "Linkedin" },
+  { "name": "Instagram", "url": "https://instagram.com/mohitparmar", "iconName": "Instagram" },
+  { "name": "LeetCode", "url": "https://leetcode.com/mohitparmar", "iconName": "LeetCode" },
+  { "name": "Email", "url": "mailto:mohit@example.com", "iconName": "Mail" }
+]

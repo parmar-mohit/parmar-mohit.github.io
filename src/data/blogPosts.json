@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": "deep-dive-into-react-hooks",
+    "title": "A Deep Dive into React Hooks",
+    "snippet": "Explore the power and flexibility of React Hooks, understanding how they revolutionize state management and side effects in functional components...",
+    "longExcerpt": "This post dives deep into React Hooks, covering useState, useEffect, useContext, useReducer, useCallback, useMemo, and custom hooks. We explore practical examples and best practices for leveraging hooks to write cleaner, more maintainable, and efficient React applications. Understand the rules of hooks and how they compare to class components.",
+    "date": "2024-07-15",
+    "tags": ["React", "JavaScript", "Frontend"],
+    "imageUrls": [
+      "https://placehold.co/1200x500.png",
+      "https://placehold.co/800x400.png"
+    ],
+    "dataAiHint": "abstract code",
+    "estimatedReadingTime": "Est. 12 min read",
+    "content": "React Hooks have fundamentally changed how we write components in React. Introduced in React 16.8, they allow you to use state and other React features without writing a class. This post will explore some of the most commonly used hooks and advanced patterns.\\n\\n## useState\\nThe `useState` hook is the most basic hook and allows you to add state to functional components.\\n\\n```jsx\\nimport React, { useState } from 'react';\\n\\nfunction Counter() {\\n  const [count, setCount] = useState(0);\\n  return (\\n    <div>\\n      <p>You clicked {count} times</p>\\n      <button onClick={() => setCount(count + 1)}>\\n        Click me\\n      </button>\\n    </div>\\n  );\\n}\\n```\\n\\n## useEffect\\nThe `useEffect` hook lets you perform side effects in functional components. It's a close replacement for `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` in class components.\\n\\nExample: Fetching data\\n```jsx\\nimport React, { useState, useEffect } from 'react';\\n\\nfunction UserData({ userId }) {\\n  const [user, setUser] = useState(null);\\n\\n  useEffect(() => {\\n    fetch(`https://api.example.com/users/${userId}`)\\n      .then(response => response.json())\\n      .then(data => setUser(data));\\n  }, [userId]); // Dependency array\\n\\n  if (!user) return <p>Loading...</p>;\\n  return <p>User: {user.name}</p>;\\n}\\n```\\n\\n## useContext\\n... (content continues) ...\\n\\nThis is just a brief overview. Hooks offer much more, including `useReducer`, `useCallback`, `useMemo`, and the ability to create custom hooks. Mastering them is key to modern React development."
+  },
+  {
+    "id": "mastering-asynchronous-javascript",
+    "title": "Mastering Asynchronous JavaScript",
+    "snippet": "From callbacks to Promises and async/await, this post breaks down asynchronous programming in JavaScript, helping you write cleaner, more efficient code...",
+    "longExcerpt": "Asynchronous JavaScript is crucial for modern web development. This comprehensive guide covers callbacks, the event loop, Promises (then, catch, finally, all, race), and the elegant async/await syntax. Learn how to handle asynchronous operations effectively, avoid callback hell, and write non-blocking, performant code.",
+    "date": "2024-06-28",
+    "tags": ["JavaScript", "Node.js", "Async"],
+    "imageUrls": [
+      "https://placehold.co/1200x500.png"
+    ],
+    "dataAiHint": "network nodes",
+    "estimatedReadingTime": "Est. 10 min read",
+    "content": "Placeholder content for Mastering Asynchronous JavaScript..."
+  },
+  {
+    "id": "building-scalable-apis-with-nestjs",
+    "title": "Building Scalable APIs with NestJS",
+    "snippet": "Learn how to leverage NestJS, a progressive Node.js framework, for building efficient, reliable, and scalable server-side applications...",
+    "longExcerpt": "NestJS offers a robust, out-of-the-box application architecture that enables developers to create highly testable, scalable, loosely coupled, and easily maintainable applications. This article walks through setting up a NestJS project, creating modules, controllers, services, and connecting to a database to build a production-ready API.",
+    "date": "2024-05-10",
+    "tags": ["Node.js", "NestJS", "Backend", "API"],
+    "imageUrls": [
+      "https://placehold.co/1200x500.png",
+      "https://placehold.co/800x400.png",
+      "https://placehold.co/800x400.png"
+    ],
+    "dataAiHint": "server architecture",
+    "estimatedReadingTime": "Est. 15 min read",
+    "content": "Placeholder content for Building Scalable APIs with NestJS..."
+  }
+]
