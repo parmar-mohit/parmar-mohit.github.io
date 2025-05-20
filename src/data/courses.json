@@ -1,21 +1,254 @@
-
 [
   {
-    "id": "course1",
-    "title": "Advanced Node.js",
-    "issuingOrganisation": "Coursera",
-    "date": "Completed Feb 2020",
-    "description": "In-depth course covering advanced Node.js concepts, performance optimization, and microservices.",
+    "id": "Course 28",
+    "title": "Microservices: Design Patterns",
+    "date": "Completed Mar 2025",
+    "description": "This course focused on microservices architecture and design patterns essential for building scalable and resilient systems. I learned patterns such as Sidecar, Circuit Breaker, API Gateway, Saga, and Service Discovery. The course emphasized best practices for decoupling services, ensuring fault tolerance, and managing inter-service communication effectively.",
     "iconName": "BookOpen",
-    "imageUrl": "https://placehold.co/600x350.png"
+    "imageUrl": "/images/courses/microservices-design-patterns.png",
+    "issuingOrganisation": "LinkedIn Learning"
   },
   {
-    "id": "course2",
-    "title": "Data Structures and Algorithm Specialization",
-    "issuingOrganisation": "edX",
-    "date": "Completed Dec 2019",
-    "description": "Comprehensive specialization covering fundamental and advanced data structures and algorithms.",
+    "id": "Course 27",
+    "title": "Practical Cybersecurity for IT Professionals",
+    "date": "Completed Mar 2025",
+    "description": "This course covered essential cybersecurity concepts and practices tailored for IT professionals. I learned about threat detection, network security, vulnerability management, secure configurations, and incident response. It strengthened my ability to identify risks and implement practical security measures to protect systems and data.",
     "iconName": "BookOpen",
-    "imageUrl": "https://placehold.co/600x350.png"
+    "imageUrl": "/images/courses/practical-cybersecurity-for-it-professionals.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 26",
+    "title": "Programming Foundations: Secure Coding",
+    "date": "Completed Mar 2025",
+    "description": "This course focused on the fundamentals of writing secure code to protect applications from common vulnerabilities. I learned best practices to prevent issues like SQL injection, cross-site scripting (XSS), buffer overflows, and insecure data handling. It enhanced my ability to develop robust, secure, and reliable software across different programming environments.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/programming-foundations-secure-coding.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  }, 
+  {
+    "id": "Course 25",
+    "title": "GCP Google Cloud Professional DevOps Engineer Certification",
+    "date": "Completed Mar 2025",
+    "description": "This course prepared me for the Google Cloud Professional DevOps Engineer certification by covering key DevOps practices and GCP services. I learned how to implement CI/CD pipelines, monitor systems, manage infrastructure as code, and ensure reliability and scalability using tools like Cloud Build, Stackdriver, and Kubernetes. It strengthened my ability to optimize development workflows and maintain production-grade environments on GCP.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/gcp-devops-certification.png",
+    "issuingOrganisation": "Udemy"
+  },
+  {
+    "id": "Course 24",
+    "title": "Learn Java Unit Testing with Junit & Mockito in 30 Steps",
+    "date": "Completed Mar 2025",
+    "description": "This course provided practical training in Java unit testing using JUnit and Mockito frameworks. I learned how to write effective test cases, perform mocking, and implement test-driven development (TDD) principles. The course enhanced my ability to ensure code quality and reliability through automated testing.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/junit-testing-with-mockito.png",
+    "issuingOrganisation": "Udemy"
+  },
+  {
+    "id": "Course 23",
+    "title": "UML and Object Oriented Design Foundations",
+    "date": "Completed Feb 2025",
+    "description": "This course covered the fundamentals of UML (Unified Modeling Language) and object-oriented design principles. I learned how to model software systems using class diagrams, use case diagrams, sequence diagrams, and activity diagrams. The course strengthened my ability to design well-structured, maintainable, and scalable software architectures.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/uml-and-object-oriented-design-foundation.png",
+    "issuingOrganisation": "Udemy"
+  },
+  {
+    "id": "Course 22",
+    "title": "Advanced Design Patterns: Design Principles",
+    "date": "Completed Feb 2025",
+    "description": "This course focused on advanced design patterns and core object-oriented design principles, enhancing my understanding of low-level design. I learned how to structure scalable, maintainable code using SOLID principles and patterns like Singleton, Factory, Strategy, and Observer. It strengthened my ability to build clean and extensible software architectures.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/advanced-design-patterns-design-principles.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 21",
+    "title": "Kubernetes: Microservices",
+    "date": "Completed Jan 2025",
+    "description": "This course provided hands-on experience with Kubernetes and microservices architecture. I learned how to containerize applications, manage deployments, scale services, and ensure high availability using Kubernetes. The course also covered key microservices concepts like service discovery, API gateways, and inter-service communication.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/kubernetes-microservices.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 20",
+    "title": "Learning Kubernetes",
+    "date": "Completed Jan 2025",
+    "description": "This course offered a deep dive into Kubernetes, focusing on deploying, managing, and scaling containerized applications. I gained hands-on experience with key components like Pods, Deployments, Services, ConfigMaps, and Secrets. The course also covered advanced topics such as auto-scaling, rolling updates, and cluster management.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/learning-kubernetes.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 19",
+    "title": "Learning Docker",
+    "date": "Completed Jan 2025",
+    "description": "This course provided in-depth knowledge of Docker and containerization. I learned how to create, manage, and deploy containers, work with Dockerfiles, and build containerized applications. The course also covered concepts like Docker Compose, volumes, networks, and best practices for developing and shipping software in isolated environments.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/learning-docker.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 18",
+    "title": "Quantum Computing Fundamentals",
+    "date": "Completed Dec 2024",
+    "description": "This course introduced the foundational concepts of quantum computing, including qubits, superposition, entanglement, and quantum gates. I explored how quantum algorithms differ from classical ones and gained hands-on experience with basic quantum circuits. The course provided a solid understanding of the principles behind emerging quantum technologies.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/quantum-computing-fundamentals.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 17",
+    "title": "Introduction to Quantum Computing",
+    "date": "Completed Dec 2024",
+    "description": "This course provided a beginner-friendly introduction to the core principles of quantum computing. I learned about qubits, quantum states, superposition, entanglement, and basic quantum logic gates. The course helped build a strong conceptual foundation for understanding how quantum computers operate and their potential applications in solving complex problems.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/introduction-to-quantum-computing.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 16",
+    "title": "Feature Engineering",
+    "date": "Completed Jul 2023",
+    "description": "Feature Engineering delved into the critical aspect of enhancing machine learning models by crafting informative and relevant features from raw data. The course equipped me with advanced techniques to preprocess and transform data, optimizing its representation for improved model performance. Through hands-on exercises, I developed the skills to identify and engineer meaningful features, crucial for building more accurate and effective machine learning models across diverse applications.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/feature-engineering.png",
+    "issuingOrganisation": "Kaggle"
+  },
+  {
+    "id": "Course 15",
+    "title": "Intermediate Machine Learning",
+    "date": "Completed Jun 2023",
+    "description": "The Intermediate Machine Learning course delved into the intricacies of machine learning, bridging the gap between fundamental concepts and advanced techniques. Covering topics such as ensemble methods, hyperparameter tuning, and model evaluation, the course provided a nuanced understanding of building high-performing models.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/intermediate-machine-learning.png",
+    "issuingOrganisation": "Kaggle"
+  },
+  {
+    "id": "Course 14",
+    "title": "Data Cleaning",
+    "date": "Completed Jun 2023",
+    "description": "The Data Cleaning course provided a meticulous exploration of techniques and best practices essential for ensuring the integrity and quality of datasets. Covering methodologies for handling missing values, outliers, and inconsistencies, the course equipped me with the skills to preprocess and clean data effectively.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/data-cleaning.png",
+    "issuingOrganisation": "Kaggle"
+  },
+  {
+    "id": "Course 13",
+    "title": "Introduction to Machine Learning",
+    "date": "Completed Jun 2023",
+    "description": "The Computer Networking course provided a comprehensive exploration of the foundational principles and technologies that underpin modern computer networks. Covering topics such as protocols, network architecture, and security, the course equipped me with a deep understanding of how data communication functions in both local and global contexts.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/introduction-to-machine-learning.png",
+    "issuingOrganisation": "Kaggle"
+  },
+  {
+    "id": "Course 12",
+    "title": "Data Science Foundation Fundamentals",
+    "date": "Completed Apr 2023",
+    "description": "Data Science Foundation Fundamentals immersed me in the core principles of data science, covering key concepts such as statistical analysis, machine learning, and data visualization. This course equipped me with the essential skills to extract meaningful insights from complex datasets, laying a solid groundwork for advanced analytics.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/data-science-foundations-fundamentals.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 11",
+    "title": "Chief Technology Officer Career Guide",
+    "date": "Completed Apr 2023",
+    "description": "This course was an invaluable resource, offering strategic insights into the multifaceted role of a CTO. Through in-depth modules, I acquired the necessary leadership skills, technological foresight, and business acumen required to excel in this pivotal position.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/chief-technology-officer-career-guide.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 10",
+    "title": "Machine Learning with Python Foundations",
+    "date": "Completed Dec 2022",
+    "description": "Machine Learning with Python Foundations offered a solid grounding in the principles and practical applications of machine learning using the Python programming language. Through hands-on projects and comprehensive modules, I gained proficiency in implementing and understanding various machine learning algorithms. This course served as a crucial entry point, providing a robust foundation for leveraging Python's capabilities in the exciting and dynamic field of machine learning.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/machine-learning-with-python-foundations.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 9",
+    "title": "NLP with Python for Machine Learning",
+    "date": "Completed Dec 2022",
+    "description": "This course immersed me in the fascinating realm of Natural Language Processing, where I acquired the skills to process and analyze human language using Python. The course delved into techniques like text preprocessing, spanm-filteringing, empowering me to apply machine learning to language-related tasks. Through practical exercises, I developed the expertise to harness the power of Python for NLP, opening doors to diverse applications in the field of artificial intelligence.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/nlp-with-python-for-machine-learning.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 8",
+    "title": "Learning Explainable Artificial Intelligence",
+    "date": "Completed Dec 2022",
+    "description": "This course deepened my understanding of developing AI models with transparency and interpretability. I explored techniques to make complex machine learning models more understandable, ensuring their outputs are accessible and comprehensible.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/learning-explainable-artificial-intelligence.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 7",
+    "title": "Getting Started with AI and Machine Learning",
+    "date": "Completed Dec 2022",
+    "description": "Course provided a concise yet comprehensive introduction to the fundamentals of artificial intelligence and machine learning. Through practical examples and hands-on exercises, I gained a solid foundation in designing and implementing basic AI and ML models. This course served as an excellent entry point, demystifying complex concepts and inspiring confidence for further exploration in the dynamic field of AI and machine learning.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/getting-started-with-ai-and-machine-learning.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 6",
+    "title": "Ethical Hacking Introduction",
+    "date": "Completed Dec 2022",
+    "description": "This course provided a foundational understanding of cybersecurity, equipping me with ethical hacking techniques to identify and rectify vulnerabilities in digital systems.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/ethical-hacking-introduction.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 5",
+    "title": "Artificial Intelligence Foundation Neural Networks",
+    "date": "Completed Dec 2022",
+    "description": "The Artificial Intelligence Foundation: Neural Networks course was a comprehensive exploration of the fundamental principles underlying neural networks, a cornerstone of artificial intelligence. Through in-depth modules, I gained a solid understanding of neural network architectures, learning algorithms, and their applications.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/artificial-intelligence-foundations-neural-networks.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 4",
+    "title": "Applied Machine Learning Algorithm",
+    "date": "Completed Dec 2022",
+    "description": "Applied Machine Learning Algorithms provided a comprehensive exploration of advanced machine learning techniques, enabling me to implement cutting-edge algorithms for real-world applications.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/applied-machine-learning-algorithms.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 3",
+    "title": "Applied Machine Learning Foundations",
+    "date": "Completed Dec 2022",
+    "description": "I gained a solid understanding of the theoretical underpinnings and practical considerations essential for deploying machine learning models effectively. These courses collectively equipped me with the expertise to navigate and succeed in the dynamic field of applied machine learning.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/applied-machine-learning-foundations.png",
+    "issuingOrganisation": "LinkedIn Learning"
+  },
+  {
+    "id": "Course 2",
+    "title": "Algorithms and Data Strucutures",
+    "date": "Completed Nov 2019",
+    "description": "I delved into the fundamental principles governing efficient problem-solving in computer science. Through rigorous study and practical applications, I mastered algorithmic design strategies and honed my skills in implementing data structures, equipping me with the essential tools to tackle complex computational challenges. This course has been instrumental in enhancing my ability to create optimized and scalable solutions for a wide range of problems.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/algorithms-and-data-structures.png",
+    "issuingOrganisation": "Udemy"
+  },
+  {
+    "id": "Course 1",
+    "title": "Computer Networking",
+    "date": "Completed Jul 2019",
+    "description": "The Computer Networking course provided a comprehensive exploration of the foundational principles and technologies that underpin modern computer networks. Covering topics such as protocols, network architecture, and security, the course equipped me with a deep understanding of how data communication functions in both local and global contexts.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/computer-networking.png",
+    "issuingOrganisation": "Udemy"
   }
 ]

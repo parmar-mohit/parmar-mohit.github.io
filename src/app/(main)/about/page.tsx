@@ -20,7 +20,7 @@ export default function AboutPage() {
         </div>
         <div className="flex flex-col items-center space-y-6 p-6 bg-card rounded-lg shadow-xl border border-primary/30 mt-0 md:mt-0"> {/* Adjusted margin for alignment */}
           <Image
-            src="https://placehold.co/300x300.png"
+            src="/images/profile-picture.jpg"
             alt="Mohit Parmar"
             width={200}
             height={200}
@@ -32,7 +32,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
             <Button asChild className="w-full sm:w-auto bg-primary hover:bg-primary/80 text-primary-foreground transition-all transform hover:scale-105">
-              <a href="/resume.pdf" download="MohitParmar_Resume.pdf"> {/* User will provide resume.pdf */}
+              <a href="/others/Mohit Parmar Resume.pdf" download="Mohit Parmar Resume.pdf"> {/* User will provide resume.pdf */}
                 <Download className="mr-2 h-5 w-5" /> Download Resume
               </a>
             </Button>

@@ -4,50 +4,56 @@
     "name": "Languages",
     "iconName": "Code2",
     "skills": [
-      { "name": "JavaScript", "iconName": "FileCode", "badge": "Expert" },
-      { "name": "TypeScript", "iconName": "FileCode", "badge": "Advanced" },
-      { "name": "Python", "iconName": "FileCode", "badge": "Intermediate" },
-      { "name": "HTML5", "iconName": "FileText", "badge": "Expert" },
-      { "name": "CSS3", "iconName": "FileText", "badge": "Expert" }
+      { "name": "Python", "iconName": "FileCode", "badge": "Expert" },
+      { "name": "Java", "iconName": "FileCode", "badge": "Expert" },
+      { "name": "C++", "iconName": "FileCode", "badge": "Expert" },
+      { "name": "C", "iconName": "FileText", "badge": "Expert" },
+      { "name": "JavaScript", "iconName": "FileText", "badge": "Intermediate" },
+	  { "name": "Kotlin", "iconName": "FileText", "badge": "Beginner" }
     ]
   },
   {
     "name": "Frameworks & Libraries",
     "iconName": "LayoutGrid",
     "skills": [
-      { "name": "React", "iconName": "Braces", "badge": "Expert" },
-      { "name": "Next.js", "iconName": "Braces", "badge": "Advanced" },
-      { "name": "Node.js", "iconName": "Server", "badge": "Advanced" },
+      { "name": "React", "iconName": "Braces", "badge": "Beginner" },
+      { "name": "Node.js", "iconName": "Server", "badge": "Intermediate" },
       { "name": "Express.js", "iconName": "Server", "badge": "Advanced" },
-      { "name": "Tailwind CSS", "iconName": "PenTool", "badge": "Advanced" }
+	  { "name": "SpringBoot", "iconName": "Braces", "badge": "Intermediate" }
     ]
   },
   {
     "name": "Tools & Platforms",
     "iconName": "Wrench",
     "skills": [
-      { "name": "Git & GitHub", "iconName": "Github", "badge": "Expert" },
+      { "name": "Git & GitHub", "iconName": "Github", "badge": "Intermediate" },
       { "name": "Docker", "iconName": "Cpu", "badge": "Intermediate" },
-      { "name": "VS Code", "iconName": "Code", "badge": "Expert" },
-      { "name": "Figma", "iconName": "PenTool", "badge": "Intermediate" }
+      { "name": "Kubernetes", "iconName": "Code", "badge": "Intermediate" }
     ]
   },
   {
     "name": "Cloud & DevOps",
     "iconName": "Cloud",
     "skills": [
-      { "name": "Firebase", "iconName": "DatabaseIcon", "badge": "Advanced" },
-      { "name": "Google Cloud Platform (GCP)", "iconName": "Cloud", "badge": "Intermediate" },
-      { "name": "Vercel", "iconName": "Server", "badge": "Advanced" }
+      { "name": "Amazon Web Services (AWS)", "iconName": "Cloud", "badge": "Advanced" },
+      { "name": "Google Cloud Platform (GCP)", "iconName": "Cloud", "badge": "Intermediate" }
     ]
   },
   {
     "name": "Databases",
     "iconName": "DatabaseIcon",
     "skills": [
-      { "name": "Firestore", "iconName": "DatabaseIcon", "badge": "Advanced" },
+      { "name": "MySQL", "iconName": "DatabaseIcon", "badge": "Advanced" },
       { "name": "MongoDB", "iconName": "DatabaseIcon", "badge": "Intermediate" },
       { "name": "PostgreSQL", "iconName": "DatabaseIcon", "badge": "Basic" }
+    ]
+  },
+  {
+    "name": "Other",
+    "iconName": "Wrench",
+    "skills": [
+      { "name": "Android", "iconName": "Code", "badge": "Intermediate" },
+      { "name": "Machine Learning", "iconName": "Cpu", "badge": "Beginner" }
     ]
   }
 ]

@@ -39,7 +39,7 @@ export default function ProjectsPage() {
                   alt={project.title}
                   width={600}
                   height={400}
-                  className="w-full h-48 object-cover project-card-image"
+                  className="object-contain w-full h-auto project-card-image"
                 />
               ) : (
                 <div className="w-full h-48 bg-muted flex items-center justify-center text-muted-foreground">

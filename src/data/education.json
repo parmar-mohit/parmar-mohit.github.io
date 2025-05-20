@@ -1,17 +1,17 @@
 
 [
   {
-    "id": "edu1",
-    "title": "M.Sc. in Computer Science @ University of Technology",
-    "date": "2016 - 2018",
-    "description": "Focused on machine learning and distributed systems. Thesis on 'Scalable AI for Big Data Analytics'.",
+    "id": "Education 2",
+    "title": "B.E in Computer Engineering @ Rajiv Gandhi Institute of Technology, Mumbai",
+    "date": "2020 - 2024",
+    "description": "My academic journey extended into core computer engineering at another college, where I delved into subjects such as Database Management Systems (DBMS), Operating Systems (OS), and Computer Networks (CN). This comprehensive curriculum fueled my project endeavors, showcasing a robust fusion of theoretical understanding and hands-on implementation.",
     "iconName": "GraduationCap"
   },
   {
-    "id": "edu2",
-    "title": "B.Sc. in Software Engineering @ City College",
-    "date": "2012 - 2016",
-    "description": "Graduated with honors. Capstone project involved developing a mobile application for local community services.",
+    "id": "Education 1",
+    "title": "HSC Science @ Mithibai College, Mumbai",
+    "date": "2018 - 2020",
+    "description": "I acquired foundational programming skills through a vocational computer science course, focusing on C++ language fundamentals. Additionally, I gained practical insights into hardware, delving into 8085 microprocessor programming. This diverse knowledge forms the cornerstone of my technical expertise.",
     "iconName": "GraduationCap"
   }
 ]
