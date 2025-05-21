@@ -78,13 +78,11 @@ export default function ProjectsPage() {
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Link>
               </Button>
-              {project.liveDemoUrl && (
-                 <Button variant="default" asChild className="bg-primary text-primary-foreground hover:bg-primary/80 transition-all transform hover:scale-105 active:scale-95">
-                  <Link href={`/projects/${project.id}`}>
-                    <ExternalLink className="mr-2 h-4 w-4" /> View Details
-                  </Link>
-                </Button>
-              )}
+				<Button variant="default" asChild className="bg-primary text-primary-foreground hover:bg-primary/80 transition-all transform hover:scale-105 active:scale-95">
+				<Link href={`/projects/${project.id}`}>
+				<ExternalLink className="mr-2 h-4 w-4" /> View Details
+				</Link>
+			</Button>
             </CardFooter>
           </Card>
         ))}

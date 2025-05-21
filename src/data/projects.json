@@ -1,6 +1,6 @@
 [
   {
-    "id": "Project 8",
+    "id": "Project-8",
     "title": "SimplifyMe",
     "description": "This project is designed to leverage machine learning and natural language processing, specifically employing the BART model—a transformer-based model. The primary objective of this project is to generate summaries of research papers. By utilizing advanced techniques in NLP and machine learning, SimplifyMe aims to provide concise and coherent summaries, enhancing the accessibility and comprehension of lengthy research papers.",
     "imageUrls": [
@@ -12,7 +12,7 @@
     "githubUrl": "https://github.com/parmar-mohit/SimplifyMe"
   },
   {
-    "id": "Project 7",
+    "id": "Project-7",
     "title": "Decentralised Voting Application",
     "description": "This project that employs decentralized blockchain technology to facilitate voting activities. Through this application, users have the ability to participate in elections and cast their votes for their preferred candidates. The project harnesses the capabilities of smart contracts to ensure the transparency, security, and integrity of the entire voting process, offering a decentralized and tamper-resistant solution for conducting elections.",
     "imageUrls": [
@@ -27,7 +27,7 @@
     "githubUrl": "https://github.com/parmar-mohit/Decentralised-Voting-Application"
   },
   {
-    "id": "Project 6",
+    "id": "Project-6",
     "title": "Attendance System using Face Recognition",
     "description": "This project is designed to streamline and automate the attendance tracking process for teachers. The system utilizes face recognition technology, specifically the EigenFaceRecognizer model, to capture and analyze /images of students in the classroom. By employing this innovative approach, the project aims to eliminate manual efforts associated with traditional attendance management systems, providing a more efficient and accurate way to mark attendance through facial recognition.",
     "imageUrls": [
@@ -41,7 +41,7 @@
     "githubUrl": "https://github.com/parmar-mohit/Attendance-System-using-Face-Recognition"
   },
   {
-    "id": "Project 5",
+    "id": "Project-5",
     "title": "Bikes Price Prediction",
     "description": "This project is focused on forecasting the prices of bikes using a variety of features such as country of origin, aesthetics, engine displacement, power, torque, and more. The project encompasses data cleaning, thorough analysis, and machine learning modeling to achieve accurate predictions. Additionally, it features an Android interface, allowing users to input specific details about bikes. This holistic approach combines data science and user interaction, providing a comprehensive tool for predicting bike prices.",
     "imageUrls": [
@@ -55,7 +55,7 @@
     "githubUrl": "https://github.com/parmar-mohit/Bikes-Price-Prediction"
   },
   {
-    "id": "Project 4",
+    "id": "Project-4",
     "title": "Automated Time Table Scheduler",
     "description": "This project aimed to streamline the process of generating conflict-free timetables by leveraging a Genetic Algorithm. The project likely involved taking input parameters such as the number of classrooms, teachers, classes, subjects, and preferred timings. By utilizing the genetic algorithm, the system would have iteratively generated and evolved potential timetables, optimizing for factors like room availability, teacher schedules, and class constraints. The end result would be an automated timetable that minimizes conflicts and meets the specified criteria, providing an efficient solution for scheduling in educational institutions.",
     "imageUrls": [
@@ -71,7 +71,7 @@
     "githubUrl": "https://github.com/parmar-mohit/Automated_Time_Table_Scheduler"
   },
   {
-    "id": "Project 3",
+    "id": "Project-3",
     "title": "School App",
     "description": "The School App project is a comprehensive solution designed to enhance communication and data management between teachers, students, and parents. The desktop application provides teachers with a user-friendly interface to store and manage student data, including the capability to enter and update student marks.The Android application serves as a convenient platform for parents to access their children's academic progress. Parents can log in using their phone numbers, gaining secure access to information about their children's performance, grades, and other relevant academic details.",
     "imageUrls": [
@@ -88,7 +88,7 @@
     "githubUrl": "https://github.com/parmar-mohit/School-App"
   },
   {
-    "id": "Project 2",
+    "id": "Project-2",
     "title": "Grocery Shop Billing System",
     "description": "The Grocery Shop Billing System project is designed to assist grocery shops in managing their inventory and generating customer bills. This system likely includes functionalities to keep track of available stock, update inventory levels, and generate accurate and detailed bills for customers.One notable feature is the integration of discount codes, providing the flexibility to apply and manage discounts during the billing process. This addition allows the grocery shop to implement promotional activities or loyalty programs effectively, enhancing the overall shopping experience for customers.",
     "imageUrls": [
@@ -102,7 +102,7 @@
     "githubUrl": "https://github.com/parmar-mohit/Grocery-Shop-Billing-System"
   },
   {
-    "id": "Project 1",
+    "id": "Project-1",
     "title": "Airline Ticket Reservation System",
     "description": "The Airline Ticket Reservation System project streamlines the process of booking airline tickets online. Users can easily search for flights, select seats, and make secure online payments. The system provides a user-friendly interface for managing personal information and viewing booking history. With a focus on convenience, the project aims to offer a seamless and efficient solution for travelers to plan and confirm their air travel arrangements.",
     "imageUrls": [

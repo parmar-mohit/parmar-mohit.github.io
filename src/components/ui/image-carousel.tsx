@@ -14,10 +14,10 @@ interface ImageCarouselProps {
   imageClassName?: string;
 }
 
-export function ImageCarousel({ 
-  imageUrls, 
-  altText, 
-  className, 
+export function ImageCarousel({
+  imageUrls,
+  altText,
+  className,
   imageClassName
 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,7 +49,7 @@ export function ImageCarousel({
         alt={`${altText} - Slide ${currentIndex + 1}`}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className={cn("object-cover transition-opacity duration-500 ease-in-out", imageClassName)}
+        className={cn("object-contain transition-opacity duration-500 ease-in-out", imageClassName)} // Changed from object-cover to object-contain
         priority={currentIndex === 0} // Prioritize loading the first image
       />
       {imageUrls.length > 1 && (

@@ -75,7 +75,8 @@ export default async function ProjectDetailPage({ params }: { params: { projectI
                     alt={`${project.title} screenshot ${index + 1}`}
                     width={600}
                     height={400}
-                    className="rounded-md shadow-md border border-border/20 object-contain w-full h-auto aspect-video"
+                    style={{ objectFit: 'contain' }}
+    				className="rounded-md"
                   />
                 ))}
               </CardContent>
