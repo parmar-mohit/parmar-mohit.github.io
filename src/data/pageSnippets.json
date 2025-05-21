@@ -1,0 +1,66 @@
+
+[
+  {
+    "id": "about",
+    "title": "About Me",
+    "href": "/about",
+    "description": "My background, journey into tech, and personal interests. > whoami",
+    "iconName": "User"
+  },
+  {
+    "id": "skills",
+    "title": "Skills Matrix",
+    "href": "/skills",
+    "description": "Core competencies and technologies I work with. > system_monitor skills",
+    "iconName": "Code2"
+  },
+  {
+    "id": "projects",
+    "title": "Project Showcase",
+    "href": "/projects",
+    "description": "A selection of my key projects and development work. > ls ./projects",
+    "iconName": "Briefcase"
+  },
+  {
+    "id": "experience",
+    "title": "Work Experience",
+    "href": "/experience",
+    "description": "My professional roles and contributions. > cat work_history.log",
+    "iconName": "Briefcase"
+  },
+  {
+    "id": "education",
+    "title": "Education",
+    "href": "/education",
+    "description": "My academic qualifications and achievements. > show_degrees --all",
+    "iconName": "GraduationCap"
+  },
+   {
+    "id": "certificates",
+    "title": "Certificate",
+    "href": "/certificates",
+    "description": "My professional certificates and credentials. > verify_certs --all",
+    "iconName": "ShieldCheck"
+  },
+  {
+    "id": "blogs",
+    "title": "Blog Archive",
+    "href": "/blogs",
+    "description": "Thoughts, tutorials, and insights on tech topics. > tail -f /var/log/blog.log",
+    "iconName": "Rss"
+  },
+  {
+    "id": "courses",
+    "title": "Courses",
+    "href": "/courses",
+    "description": "Significant courses I've undertaken for skill enhancement. > list_courses --completed",
+    "iconName": "BookOpen"
+  },
+  {
+    "id": "connect",
+    "title": "Connect",
+    "href": "/connect",
+    "description": "Let's connect! Find my profiles or send a message. > establish_connection -p social",
+    "iconName": "MessageSquare"
+  }
+]

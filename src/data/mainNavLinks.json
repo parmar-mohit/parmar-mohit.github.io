@@ -1,0 +1,13 @@
+
+[
+  { "href": "/", "label": "Home", "iconName": "User" },
+  { "href": "/about", "label": "About", "iconName": "User" },
+  { "href": "/skills", "label": "Skills", "iconName": "Code" },
+  { "href": "/projects", "label": "Projects", "iconName": "Briefcase" },
+  { "href": "/experience", "label": "Experience", "iconName": "Briefcase" },
+  { "href": "/education", "label": "Education", "iconName": "GraduationCap" },
+  { "href": "/certificates", "label": "Certificate", "iconName": "ShieldCheck" },
+  { "href": "/courses", "label": "Courses", "iconName": "BookOpen" },
+  { "href": "/blogs", "label": "Blogs", "iconName": "Rss" },
+  { "href": "/connect", "label": "Connect", "iconName": "MessageSquare" }
+]

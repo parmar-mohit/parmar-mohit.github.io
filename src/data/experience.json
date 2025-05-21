@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": "Experience 2",
+    "title": "Systems Engineer @ Tata Consultancy Services",
+    "date": "Nov 2024 - Present",
+    "description": "Conducted detailed code reviews to ensure adherence to coding standards, best practices, and optimal performance before code merges.\nAccomplished 85%+ test coverage across multiple modules, as measured by JUnit and Mockito reports, by developing robust unit tests and conducting design reviews.\nWorked closely with developers to identify potential issues early, improve code reliability, and maintain high coding standards.",
+    "iconName": "Briefcase"
+  },
+  {
+    "id": "Experience 1",
+    "title": "Co-founder & Chief Technology Officer @ The Bommber",
+    "date": "Apr 2024- Nov 2024",
+    "description": "Led the development of a scalable, interactive email marketing platform, by integrating in-mail shopping and quizzes to enhance engagement and conversion.\nLaunched and maintained a responsive company website, by focusing on seamless design, intuitive navigation, and performance optimization for mobile and desktop users.\nDesigned and deployed a secure platform using five AWS services, integrating payment gateways to enhance transactions and customer experience.\nExecuted two successful large-scale email campaigns, scaling the system to handle over 10,000 recipients in the first and 20,000 in the second, by applying project management and system scaling strategies.",
+    "iconName": "Briefcase"
+  }
+]

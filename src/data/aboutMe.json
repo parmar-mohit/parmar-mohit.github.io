@@ -1,0 +1,12 @@
+{
+  "name": "Mohit Parmar",
+  "title": "Software Developer",
+  "location": "Planet Earth (Remote)",
+  "passions": ["Coding", "Problem Solving", "New Technologies", "Gaming"],
+  "currentFocus": "Building innovative and efficient web solutions",
+  "contact": {
+    "email": "mohitparmar8080@gmail.com",
+    "linkedin": "linkedin.com/in/parmar-mohit",
+    "github": "github.com/parmar-mohit"
+  }
+}
