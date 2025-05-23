@@ -25,7 +25,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProjectDetailPage({ params }: { params: { projectId: string } }) {
+export default async function ProjectDetailPage({ params }: PageProps<{ projectId: string }>) {
   const project = await getProjectDetails(params.projectId);
 
   if (!project) {
