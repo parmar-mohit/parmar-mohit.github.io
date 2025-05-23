@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Github, ExternalLink, FileWarning } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { PageProps } from 'next';
 import { projectsPlaceholder } from "@/lib/constants";
 import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
 

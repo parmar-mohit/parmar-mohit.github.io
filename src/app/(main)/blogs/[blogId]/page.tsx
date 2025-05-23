@@ -2,6 +2,8 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, FileWarning } from "lucide-react";
 import Link from "next/link";
+import { PageProps } from 'next';
+
 // import Image from "next/image"; // Image import removed as ImageCarousel handles images
 import { Button } from "@/components/ui/button";
 import blogPostsData from '@/data/blogPosts.json';
