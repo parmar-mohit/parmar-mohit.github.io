@@ -21,7 +21,7 @@ export async function generateStaticParams() {
  }));
 }
 
-export default async function BlogPostPage({ params }: { params: { blogId: string } }) {
+export default async function BlogPostPage({ params }: PageProps<{ blogId: string }>) {
   const post = await getBlogPost(params.blogId);
 
   if (!post) {

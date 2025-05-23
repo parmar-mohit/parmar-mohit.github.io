@@ -3,7 +3,7 @@ import type {NextConfig} from 'next';
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
-  assetPrefix: 'https://parmar-mohit.github.io/',
+//   assetPrefix: 'https://parmar-mohit.github.io/',
   typescript: {
     ignoreBuildErrors: true,
   },
