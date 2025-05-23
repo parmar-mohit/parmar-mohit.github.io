@@ -1,6 +1,4 @@
 
-'use server';
-
 import React from 'react';
 import type { SkillCategory, SocialLink, Project, EducationItem, ExperienceItem, CourseItem, CertificateItem } from './constants';
 import Link from 'next/link';

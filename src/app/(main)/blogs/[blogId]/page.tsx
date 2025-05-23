@@ -4,13 +4,22 @@ import { ArrowLeft, FileWarning } from "lucide-react";
 import Link from "next/link";
 // import Image from "next/image"; // Image import removed as ImageCarousel handles images
 import { Button } from "@/components/ui/button";
-import { blogPostsPlaceholder } from "@/lib/constants";
+import blogPostsData from '@/data/blogPosts.json';
+
+const blogPostsPlaceholder = blogPostsData; // Use the imported data
 import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
 
 // Helper function to get a single blog post
 const getBlogPost = async (blogId: string) => {
   return blogPostsPlaceholder.find(p => p.id === blogId);
 };
+
+// Generate static params for each blog post
+export async function generateStaticParams() {
+ return blogPostsPlaceholder.map((post) => ({
+    blogId: post.id,
+ }));
+}
 
 export default async function BlogPostPage({ params }: { params: { blogId: string } }) {
   const post = await getBlogPost(params.blogId);

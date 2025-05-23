@@ -8,11 +8,22 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { projectsPlaceholder } from "@/lib/constants";
 import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
 
+import fs from 'fs';
+import path from 'path';
+
 // Helper function to get project details
 const getProjectDetails = async (projectId: string) => {
   return projectsPlaceholder.find(p => p.id === projectId);
 };
 
+export async function generateStaticParams() {
+  const projectsDataPath = path.join(process.cwd(), 'src', 'data', 'projects.json');
+  const projectsData = JSON.parse(fs.readFileSync(projectsDataPath, 'utf8'));
+
+  return projectsData.map((project: { id: string }) => ({
+    projectId: project.id,
+  }));
+}
 
 export default async function ProjectDetailPage({ params }: { params: { projectId: string } }) {
   const project = await getProjectDetails(params.projectId);
