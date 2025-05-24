@@ -7,12 +7,6 @@ import { ImageCarousel } from "@/components/ui/image-carousel";
 
 const blogPostsPlaceholder = blogPostsData;
 
-// Define the props type correctly
-type PageProps = {
-  params: {
-    blogId: string;
-  }; searchParams: { [key: string]: string | string[] | undefined }; };
-
 // Helper function to get a single blog post
 const getBlogPost = async (blogId: string) => {
   return blogPostsPlaceholder.find(p => p.id === blogId);
@@ -25,8 +19,20 @@ export async function generateStaticParams() {
   }));
 }
 
-// Use PageProps interface here
-export default async function BlogPostPage({ params }: PageProps) {
+// // Define the props type correctly
+// type PageProps = {
+//   params: {
+//     blogId: string;
+//   };
+// };
+
+// // Use PageProps interface here
+// export default async function BlogPostPage({ params }: PageProps) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: { blogId: string };
+}) {
   const post = await getBlogPost(params.blogId);
 
   if (!post) {
