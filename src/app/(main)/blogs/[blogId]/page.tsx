@@ -1,14 +1,18 @@
-
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, FileWarning } from "lucide-react";
 import Link from "next/link";
-
-// import Image from "next/image"; // Image import removed as ImageCarousel handles images
 import { Button } from "@/components/ui/button";
 import blogPostsData from '@/data/blogPosts.json';
+import { ImageCarousel } from "@/components/ui/image-carousel";
 
-const blogPostsPlaceholder = blogPostsData; // Use the imported data
-import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
+const blogPostsPlaceholder = blogPostsData;
+
+// Define the props type correctly
+interface PageProps {
+  params: {
+    blogId: string;
+  };
+}
 
 // Helper function to get a single blog post
 const getBlogPost = async (blogId: string) => {
@@ -17,12 +21,13 @@ const getBlogPost = async (blogId: string) => {
 
 // Generate static params for each blog post
 export async function generateStaticParams() {
- return blogPostsPlaceholder.map((post) => ({
+  return blogPostsPlaceholder.map((post) => ({
     blogId: post.id,
- }));
+  }));
 }
 
-export default async function BlogPostPage({ params }: { params: { blogId: string } }) {
+// Use PageProps interface here
+export default async function BlogPostPage({ params }: PageProps) {
   const post = await getBlogPost(params.blogId);
 
   if (!post) {
@@ -59,11 +64,11 @@ export default async function BlogPostPage({ params }: { params: { blogId: strin
       </header>
 
       {post.imageUrls && post.imageUrls.length > 0 && (
-         <ImageCarousel 
-            imageUrls={post.imageUrls} 
-            altText={`${post.title} images`}
-            className="mb-8 max-h-[500px]" 
-          />
+        <ImageCarousel 
+          imageUrls={post.imageUrls} 
+          altText={`${post.title} images`}
+          className="mb-8 max-h-[500px]" 
+        />
       )}
 
       <div

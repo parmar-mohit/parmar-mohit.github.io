@@ -1,32 +1,32 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Github, ExternalLink, FileWarning } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { projectsPlaceholder } from "@/lib/constants";
-import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
+import { ImageCarousel } from "@/components/ui/image-carousel";
+import fs from "fs";
+import path from "path";
 
-import fs from 'fs';
-import path from 'path';
-
-// Helper function to get project details
-const getProjectDetails = async (projectId: string) => {
-  return projectsPlaceholder.find(p => p.id === projectId);
+// Helper to load all project data at build time
+const loadProjectsData = () => {
+  const filePath = path.join(process.cwd(), "src", "data", "projects.json");
+  const fileContents = fs.readFileSync(filePath, "utf8");
+  return JSON.parse(fileContents);
 };
 
+// For static site generation
 export async function generateStaticParams() {
-  const projectsDataPath = path.join(process.cwd(), 'src', 'data', 'projects.json');
-  const projectsData = JSON.parse(fs.readFileSync(projectsDataPath, 'utf8'));
-
-  return projectsData.map((project: { id: string }) => ({
+  const projects = loadProjectsData();
+  return projects.map((project: { id: string }) => ({
     projectId: project.id,
   }));
 }
 
-export default async function ProjectDetailPage({ params }:  { params: { projectId: string }}) {
-  const project = await getProjectDetails(params.projectId);
+// Page component
+export default async function ProjectDetailPage({ params }: { params: { projectId: string } }) {
+  const projects = loadProjectsData();
+  const project = projects.find(p => p.id === params.projectId);
 
   if (!project) {
     return (
@@ -50,7 +50,7 @@ export default async function ProjectDetailPage({ params }:  { params: { project
           <ImageCarousel 
             imageUrls={project.imageUrls} 
             altText={`${project.title} showcase`}
-            className="h-64 md:h-96" // Maintain aspect ratio if needed
+            className="h-64 md:h-96"
           />
         ) : (
           <div className="w-full h-64 md:h-96 bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
@@ -69,7 +69,9 @@ export default async function ProjectDetailPage({ params }:  { params: { project
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-2 space-y-8">
           <Card className="bg-card/70 border-border/30 shadow-lg">
-            <CardHeader><CardTitle className="text-2xl text-primary">About This Project</CardTitle></CardHeader>
+            <CardHeader>
+              <CardTitle className="text-2xl text-primary">About This Project</CardTitle>
+            </CardHeader>
             <CardContent className="text-muted-foreground leading-relaxed prose prose-invert max-w-none">
               <p>{project.description}</p>
             </CardContent>
@@ -77,9 +79,11 @@ export default async function ProjectDetailPage({ params }:  { params: { project
 
           {project.screenshots && project.screenshots.length > 0 && (
             <Card className="bg-card/70 border-border/30 shadow-lg">
-              <CardHeader><CardTitle className="text-2xl text-primary">Screenshots</CardTitle></CardHeader>
+              <CardHeader>
+                <CardTitle className="text-2xl text-primary">Screenshots</CardTitle>
+              </CardHeader>
               <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {project.screenshots.map((src, index) => (
+                {project.screenshots.map((src: string, index: number) => (
                   <Image
                     key={index}
                     src={src}
@@ -87,7 +91,7 @@ export default async function ProjectDetailPage({ params }:  { params: { project
                     width={600}
                     height={400}
                     style={{ objectFit: 'contain' }}
-    				className="rounded-md"
+                    className="rounded-md"
                   />
                 ))}
               </CardContent>
@@ -97,20 +101,26 @@ export default async function ProjectDetailPage({ params }:  { params: { project
 
         <aside className="space-y-6">
           <Card className="bg-card/70 border-border/30 shadow-lg">
-            <CardHeader><CardTitle className="text-xl text-primary">Tech Stack</CardTitle></CardHeader>
+            <CardHeader>
+              <CardTitle className="text-xl text-primary">Tech Stack</CardTitle>
+            </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
-              {project.fullTechStack.map(tech => (
-                <Badge key={tech} variant="secondary" className="bg-primary/20 text-primary">{tech}</Badge>
+              {project.fullTechStack.map((tech: string) => (
+                <Badge key={tech} variant="secondary" className="bg-primary/20 text-primary">
+                  {tech}
+                </Badge>
               ))}
             </CardContent>
           </Card>
 
           {project.challenges && project.challenges.length > 0 && (
             <Card className="bg-card/70 border-border/30 shadow-lg">
-              <CardHeader><CardTitle className="text-xl text-primary">Challenges Faced</CardTitle></CardHeader>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">Challenges Faced</CardTitle>
+              </CardHeader>
               <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  {project.challenges.map((challenge, index) => (
+                  {project.challenges.map((challenge: string, index: number) => (
                     <li key={index}>{challenge}</li>
                   ))}
                 </ul>
@@ -119,7 +129,9 @@ export default async function ProjectDetailPage({ params }:  { params: { project
           )}
 
           <Card className="bg-card/70 border-border/30 shadow-lg">
-            <CardHeader><CardTitle className="text-xl text-primary">Project Links</CardTitle></CardHeader>
+            <CardHeader>
+              <CardTitle className="text-xl text-primary">Project Links</CardTitle>
+            </CardHeader>
             <CardContent className="space-y-3">
               <Button variant="outline" asChild className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
                 <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
