@@ -8,11 +8,11 @@ import { ImageCarousel } from "@/components/ui/image-carousel";
 const blogPostsPlaceholder = blogPostsData;
 
 // Define the props type correctly
-interface PageProps {
+type PageProps = Promise<{
   params: {
     blogId: string;
   };
-}
+}>
 
 // Helper function to get a single blog post
 const getBlogPost = async (blogId: string) => {
