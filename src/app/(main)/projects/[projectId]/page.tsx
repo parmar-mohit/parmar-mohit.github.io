@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Github, ExternalLink, FileWarning } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PageProps } from 'next';
 import { projectsPlaceholder } from "@/lib/constants";
 import { ImageCarousel } from "@/components/ui/image-carousel"; // Import the new carousel
 
@@ -26,7 +25,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProjectDetailPage({ params }: PageProps<{ projectId: string }>) {
+export default async function ProjectDetailPage({ params }:  { params: { projectId: string }}) {
   const project = await getProjectDetails(params.projectId);
 
   if (!project) {
