@@ -1,9 +1,0 @@
-
-[
-  { "name": "GitHub", "url": "https://github.com/parmar-mohit", "iconName": "Github" },
-  { "name": "LinkedIn", "url": "https://linkedin.com/in/parmar-mohit", "iconName": "Linkedin" },
-  { "name": "Instagram", "url": "https://instagram.com/_mohitparmar_", "iconName": "Instagram" },
-  { "name": "LeetCode", "url": "https://leetcode.com/_mohitparmar_", "iconName": "LeetCode" },
-  { "name": "Email", "url": "mailto:mohitparmar8080@gmail.com", "iconName": "Mail" }
-]
-
