@@ -1,5 +1,14 @@
 [
   {
+    "id": "Course 30",
+    "title": "Mastering System Design Interview",
+    "date": "Completed Jul 2025",
+    "description": "Mastering System Design is a deep-dive course into modern system design principles, with a strong focus on building scalable, reliable architectures using AWS. From load balancing to distributed databases, this course helped me gain hands-on experience with real-world cloud infrastructure.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/mastering-system-design-interview.jpg",
+    "issuingOrganisation": "Udemy"
+  },
+  {
     "id": "Course 29",
     "title": "Rocking System Design",
     "date": "Completed Jun 2025",
