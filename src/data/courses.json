@@ -1,4 +1,13 @@
 [
+	{
+    "id": "Course 31",
+    "title": "Quantum Computing and Intro to Quantum Machine Learning",
+    "date": "Completed Aug 2025",
+    "description": "An introductory course covering the fundamentals of quantum computing, quantum algorithms, and their applications. Explored the basics of quantum machine learning and its potential in solving complex computational problems.",
+    "iconName": "BookOpen",
+    "imageUrl": "/images/courses/quantum-computing-and-intro-to-quantum-machine-learning.jpg",
+    "issuingOrganisation": "Udemy"
+  },
   {
     "id": "Course 30",
     "title": "Mastering System Design Interview",
