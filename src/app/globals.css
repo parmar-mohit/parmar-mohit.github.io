@@ -1,7 +1,7 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts"; /* Adjust the path if your config is elsewhere */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Keep the rest of your CSS below */
 
 body {
   font-family: var(--font-geist-mono), Menlo, Monaco, 'Courier New', monospace; /* Ensure monospaced font is default */

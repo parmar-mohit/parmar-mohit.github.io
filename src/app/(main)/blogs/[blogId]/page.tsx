@@ -2,9 +2,8 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, FileWarning } from "lucide-react";
 import Link from "next/link";
-import { PageProps } from 'next';
 
-// import Image from "next/image"; // Image import removed as ImageCarousel handles images
+
 import { Button } from "@/components/ui/button";
 import blogPostsData from '@/data/blogPosts.json';
 
@@ -16,6 +15,10 @@ const getBlogPost = async (blogId: string) => {
   return blogPostsPlaceholder.find(p => p.id === blogId);
 };
 
+type BlogPostPageProps = {
+  params: Promise<{ blogId: string }>;
+};
+
 // Generate static params for each blog post
 export async function generateStaticParams() {
  return blogPostsPlaceholder.map((post) => ({
@@ -23,8 +26,9 @@ export async function generateStaticParams() {
  }));
 }
 
-export default async function BlogPostPage({ params }: PageProps<{ blogId: string }>) {
-  const post = await getBlogPost(params.blogId);
+export default async function BlogPostPage({ params }: BlogPostPageProps ) {
+  const {blogId} = await params; 
+  const post = await getBlogPost(blogId);
 
   if (!post) {
     return (
